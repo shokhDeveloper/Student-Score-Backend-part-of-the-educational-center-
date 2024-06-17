@@ -7,4 +7,12 @@ export const serverConfiguration = {
     token_duration: "30d", 
 }   
 
+export const postgresConfiguration = {
+    database: "score",
+    password: "82850406m",
+    host: "localhost",
+    port: 5432,
+    user: "postgres"   
+}
+
 config();
