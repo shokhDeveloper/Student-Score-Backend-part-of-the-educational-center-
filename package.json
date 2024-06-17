@@ -1,5 +1,5 @@
 {
-  "name": "beckend",
+  "name": "score-beckend",
   "version": "1.0.0",
   "description": "Score project",
   "type": "module",
@@ -10,7 +10,11 @@
   },
   "imports": {
     "#network": "./src/lib/network.js",
-    "#config": "./src/config.js"
+    "#config": "./src/config.js",
+    "#error": "./src/utils/error.js",
+    "#controller/*": "./src/controller/*",
+    "#router/*": "./src/routes/*",
+    "#middlewares/*": "./src/middlewares/*"
   },
   "keywords": [],
   "author": "",
