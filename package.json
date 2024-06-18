@@ -1,7 +1,7 @@
 {
   "name": "score-beckend",
   "version": "1.0.0",
-  "description": "Score project",
+  "description": "A program that calculates students' scores and is required for a specific training center",
   "type": "module",
   "main": "src/server.js",
   "scripts": {
@@ -15,10 +15,15 @@
     "#controller/*": "./src/controller/*",
     "#router/*": "./src/routes/*",
     "#middlewares/*": "./src/middlewares/*",
+    "#postgres": "./src/utils/postgres.js",
     "#utils/*": "./src/utils/*"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "score",
+    "crm", 
+    "node.js crm"
+  ],
+  "author": "Shohijahon Musinkulov",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",

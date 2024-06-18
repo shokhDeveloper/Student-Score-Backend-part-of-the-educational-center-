@@ -3,3 +3,6 @@ INSERT INTO users (user_first_name, user_last_name, user_username, user_role, us
 
 -- auth/admin/login
 SELECT * from users WHERE user_first_name=$1 and user_last_name=$2 and user_username=$3 and user_role=$4 and user_gender=$5 user_password=crypt($6, user_password);
+
+-- insert course
+INSERT INTO (course_name) VALUES($1) RETURNING *;

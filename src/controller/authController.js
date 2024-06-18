@@ -1,7 +1,7 @@
 import { ClientError, globalError } from "#error"
 import { tokenConfig } from "#utils/jwt.js";
 import { adminValidator, userValidator } from "#utils/validator.js";
-import { getAdmin } from "../utils/postgres.js";
+import { getAdmin } from "#postgres";
 
 export const authController = {
     ADMIN:{
