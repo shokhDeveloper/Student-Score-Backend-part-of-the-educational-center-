@@ -14,7 +14,8 @@
     "#error": "./src/utils/error.js",
     "#controller/*": "./src/controller/*",
     "#router/*": "./src/routes/*",
-    "#middlewares/*": "./src/middlewares/*"
+    "#middlewares/*": "./src/middlewares/*",
+    "#utils/*": "./src/utils/*"
   },
   "keywords": [],
   "author": "",

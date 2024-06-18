@@ -3,4 +3,4 @@ import { Router } from "express";
 
 export const authRouter = Router();
 
-authRouter.route("/admin/login", authController)
+authRouter.route("/admin/login").post(authController.ADMIN.LOGIN);

@@ -21,6 +21,7 @@ CREATE TABLE users (
     user_last_name VARCHAR(30) not null,
     user_username VARCHAR(30) not null,
     user_role INT not null,
+    user_contact VARCHAR(12) default null,
     user_gender VARCHAR(12) not null,
     user_password VARCHAR(200) not null,
     user_created_at timestamptz default current_timestamp
