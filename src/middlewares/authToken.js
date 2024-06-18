@@ -10,7 +10,10 @@ export const authToken =  async (req, res, next) => {
         const user = await getUser(token.user_id);
         if(!user) throw new ClientError(404, "User not found and token is invalid !");
         if(!(req.headers["user-agent"] == token.user_agent)) throw new ClientError(401, "Token is invalid !");
-        if(user.user_id && req.headers["user-agent"] == token.user_agent) return next();
+        if(user.user_id && req.headers["user-agent"] == token.user_agent){
+            req.userInfo = user
+            return next();
+        }
     }catch(error){
         return globalError(res, error);
     };

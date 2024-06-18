@@ -6,6 +6,7 @@ import { model } from "#middlewares/model.js";
 import  courseRouter  from "#router/courseRouter.js";
 import { authToken } from "#middlewares/authToken.js";
 import mutationRouter from "#router/mutationRouter.js";
+import { adminRouter } from "#router/adminRouter.js";
 const app = express();
 const {PORT, address} = serverConfiguration;
 
@@ -22,8 +23,9 @@ app.use("/auth", authRouter);
 app.use(authToken);
 
 // Admin routes
-app.use("/courses", courseRouter)
-app.use("/create", mutationRouter)
+app.use("/admins", adminRouter);
+app.use("/courses", courseRouter);
+app.use("/create", mutationRouter);
 
 app.listen(PORT, () => {
     console.log(`Server is running http://${address}:${PORT}`);
